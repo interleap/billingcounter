@@ -7,6 +7,11 @@ public class Order {
     private String orderId;
     private List<Item> items;
 
+    public Order(String orderId, List<Item> items) {
+        this.orderId = orderId;
+        this.items = items;
+    }
+
     @Override
     public String toString() {
         return "Order Id: " + orderId + "\n" +

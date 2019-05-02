@@ -1,7 +1,13 @@
 package com.example.billingcounter;
 
 public class BillingCounter {
-    public void bill(Order order){
+    private Printer printer;
 
+    public BillingCounter(Printer printer) {
+        this.printer = printer;
+    }
+
+    public void bill(Order order){
+        printer.print(order.toString());
     }
 }
